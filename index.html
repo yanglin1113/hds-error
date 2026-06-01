@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>错误码查询</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="lookup-panel" aria-labelledby="page-title">
+        <div class="brand-row">
+          <div class="mark" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <p>HDScanner Error Lookup</p>
+        </div>
+
+        <div class="title-block">
+          <h1 id="page-title">错误码查询</h1>
+          <p>输入错误码，立即查看对应的故障说明。</p>
+        </div>
+
+        <label class="search-box" for="query">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="m21 21-4.2-4.2m1.2-5.3a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z" />
+          </svg>
+          <input id="query" type="search" inputmode="numeric" autocomplete="off" placeholder="例如：1024" autofocus />
+        </label>
+
+        <article class="result-card" id="result" aria-live="polite">
+          <p class="result-label">等待输入</p>
+          <h2>请输入错误码</h2>
+          <p>也可以输入说明中的关键词进行查找。</p>
+        </article>
+      </section>
+
+      <section class="list-panel" aria-labelledby="list-title">
+        <div class="list-head">
+          <h2 id="list-title">错误码列表</h2>
+          <span id="count"></span>
+        </div>
+        <div class="code-list" id="codeList"></div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
