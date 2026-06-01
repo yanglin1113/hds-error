@@ -1,6 +1,6 @@
 # HDS Error Lookup
 
-HDScanner 错误码查询网站。用户输入错误码后，可以快速查看对应的中文故障说明；也支持输入说明关键词进行筛选。
+面向 HDSCANNER 病理切片扫描软件的错误码查询网站。用户输入扫描软件返回的错误码后，可以快速查看对应的中文故障说明；也支持输入说明关键词进行筛选。
 
 线上地址：[https://hds-error.vercel.app](https://hds-error.vercel.app)
 
